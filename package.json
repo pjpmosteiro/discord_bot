@@ -1,0 +1,29 @@
+{
+  "name": "discord_bot",
+  "version": "1.0.0",
+  "description": "Bot de discord",
+  "main": "bot.js",
+  "dependencies": {
+    "@keyv/mongo": "^1.1.0",
+    "@keyv/mysql": "^1.1.4",
+    "@keyv/postgres": "^1.0.16",
+    "@keyv/redis": "^2.1.2",
+    "@keyv/sqlite": "^2.0.2",
+    "discord.js": "^12.5.1",
+    "keyv": "^4.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "nodemon bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjpmosteiro/discord_bot.git"
+  },
+  "author": "l3x1um",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pjpmosteiro/discord_bot/issues"
+  },
+  "homepage": "https://github.com/pjpmosteiro/discord_bot#readme"
+}
