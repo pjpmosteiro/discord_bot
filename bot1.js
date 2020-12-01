@@ -26,4 +26,4 @@ if (msg.content != null) {
 
  
 
-client.logout('NzgzMzEyNjMxOTQyNDc5ODg3.X8Y6vA.u2l_bReQBuXMAWUPhDUFW7185Q0');
+client.logout('');
