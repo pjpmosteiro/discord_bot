@@ -4,6 +4,7 @@ const Discord = require('discord.js');
 // Create an instance of a Discord client
 const client = new Discord.Client();
 
+let control = 0;
 /**
  * The ready event is vital, it means that only _after_ this will your bot start reacting to information
  * received from Discord
@@ -13,6 +14,32 @@ client.on('ready', () => {
 });
 
 
+client.on('message', message => {
+// If the message is "ping"
+if (control > 0) {
+  if (message.content === 'ping') {
+    message.channel.send('pong');
+    control = 1;
+    return;
+  }
+  if (message.content === '!url') {
+    message.channel.send('https://example.com');
+    control = 1;
+    return;
+    }
+    if (message.content === 'rango') {
+     message.channel.send('!rank');
+     control = 1;
+     return;
+     }
+     if (message.content === 'hola') {
+        message.channel.send('hola');
+        control = 1;
+        return;
+     }
+}
+
+});
 
 client.on('message', message => {
   // Ignore messages that aren't from a guild
@@ -98,4 +125,4 @@ client.on('message', message => {
 
 
 // Log our bot in using the token from https://discord.com/developers/applications
-client.login('');
+client.login('NzgzMzEyNjMxOTQyNDc5ODg3.X8Y6vA.G7reMW5sY7bf14vJMGwuH2ORhVM');
